@@ -1,0 +1,34 @@
+HORA DO SHOW
+
+    OH O HOME AI PO (MONSTRO VALV(MONSTRO X, MONSTRO Y))
+        ELE QUE A GENTE QUER? (0 < X < Y)
+            BORA CUMPADE 1;
+        NAO VAI DAR NAO
+            BORA CUMPADE 0;
+        BIRL
+    BIRL
+    
+    OH O HOME AI PO (MONSTRO CDIA(MONSTRO W, MONSTRO OFFSET))
+        MONSTRO DD = W * 365; //TODO: leap year
+        BORA CUMPADE DD + OFFSET;
+    BIRL
+    
+    OH O HOME AI PO (MONSTRO SERVICE(MONSTRO W, MONSTRO OFFSET))
+        MONSTRO V1 = AJUDA O MALUCO TA DOENTE VALV(W + OFFSET, 2020);
+        ELE QUE A GENTE QUER? (V1 < 1)
+            CE QUER VER ESSA PORRA? ("DEU ERRO PORRA!\nANOS:%d",W);
+            BORA CUMPADE 0;
+        BIRL
+        BORA CUMPADE AJUDA O MALUCO TA DOENTE CDIA(W, OFFSET);;
+    BIRL
+
+    MONSTRO I = 0;
+    CE QUER VER ESSA PORRA? ("\nEntra com a sua idade ai cumpade!!\n");
+    QUE QUE CE QUER MONSTRAO? ("%d",&I);
+    MONSTRO RESP1 = AJUDA O MALUCO TA DOENTE SERVICE(I, 0);
+    MONSTRO RESP2 = AJUDA O MALUCO TA DOENTE SERVICE(I, 365);
+    CE QUER VER ESSA PORRA? ("Ja saiu da jaula ha pelo menos %d dias! BIRL!\n", RESP1);
+    CE QUER VER ESSA PORRA? ("No seu aniversario vao ser %d dias, PORRA!!\n", RESP2);
+    
+    BORA CUMPADE 0;
+BIRL
